@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Sort arrays by one or multiple calculated keys.
 
 %description -l pl
-Sort arrays by one or multiple calculated keys.
+Sortowanie tablic po jednym lub wielu wyliczanych kluczach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -38,7 +38,6 @@ Sort arrays by one or multiple calculated keys.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_archlib}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -49,9 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_vendorarch}/Sort/*
+%{perl_vendorarch}/Sort/*.pm
+%dir %{perl_vendorarch}/Sort/Key
 %{perl_vendorarch}/Sort/Key/*
-%dir %{perl_vendorarch}/auto/Sort/Key/*
-%{perl_vendorarch}/auto/Sort/*/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Sort/*/*.so
+%dir %{perl_vendorarch}/auto/Sort/Key
+%{perl_vendorarch}/auto/Sort/Key/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Sort/Key/*.so
 %{_mandir}/man3/*
