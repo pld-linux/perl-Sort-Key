@@ -6,7 +6,7 @@
 %define		pdir	Sort
 %define		pnam	Key
 Summary:	Sort::Key - interface to sort arrays by one or manipulate calculated keys
-Summary(pl.UTF-8):   Sort::Key - interfejs do szybkiego sortowania tablic według zmiennych kluczy
+Summary(pl.UTF-8):	Sort::Key - interfejs do szybkiego sortowania tablic według zmiennych kluczy
 Name:		perl-Sort-Key
 Version:	1.26
 Release:	1
