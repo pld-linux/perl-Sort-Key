@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Sort/Key/*
 %dir %{perl_vendorarch}/auto/Sort
 %dir %{perl_vendorarch}/auto/Sort/Key
-%{perl_vendorarch}/auto/Sort/Key/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Sort/Key/*.so
 %{_mandir}/man3/*
