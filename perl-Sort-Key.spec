@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Sort
 %define		pnam	Key
 Summary:	Sort::Key - interface to sort arrays by one or manipulate calculated keys
