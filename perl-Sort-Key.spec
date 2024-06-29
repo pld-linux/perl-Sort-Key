@@ -8,7 +8,7 @@ Summary:	Sort::Key - interface to sort arrays by one or manipulate calculated ke
 Summary(pl.UTF-8):	Sort::Key - interfejs do szybkiego sortowania tablic według zmiennych kluczy
 Name:		perl-Sort-Key
 Version:	1.33
-Release:	3
+Release:	4
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
